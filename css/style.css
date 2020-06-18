@@ -13,7 +13,7 @@
 }
 
 .header__title {
-  background-image: url("../images/logo.png");
+  background-image: url(../images/small-logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -24,7 +24,7 @@
 }
 
 .hero {
-  background-image: url("../images/hero.jpg");
+  background-image: url(../images/small-hero.jpg);
   height: 100vh;
   width: 100%;
 }
@@ -75,7 +75,7 @@
 
 .testimonial{
   height: 550px;
-  background-image: url('../images/testimonial-bg.jpg');
+  background-image: url(../images/small-testimonial-bg.jpg);
 }
 
 .input__row {
