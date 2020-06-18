@@ -1,0 +1,142 @@
+:root {
+  --bg-white: rgba(255, 255, 255, .8);
+}
+
+.header {
+  background: var(--bg-white);
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.header__title {
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  color: transparent;
+  height: 52px;
+  width: 45px;
+}
+
+.hero {
+  background-image: url("../images/hero.jpg");
+  height: 100vh;
+  width: 100%;
+}
+
+.hero__content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__box {
+  background: var(--bg-white);
+  outline: 4px double #fff;
+  position: relative;
+  text-align: center;
+  outline-offset: 8px;
+  min-width: 380px;
+  padding: 65px;
+}
+
+.hero__label {
+  font-family: 'Roboto Slab',serif;
+  display: inline-block;
+  letter-spacing: .6px;
+  margin-bottom: 39px;
+  line-height: 40px;
+  margin-top: 20px;
+  font-size: 36px;
+}
+
+.intro {
+  min-height: 650px;
+  max-height: 650px;
+  width: 100%;
+}
+
+.intro__image, .intro__content {
+  width: 50%;
+}
+
+.intro__image {
+  object-position: center;
+  min-height: inherit;
+  object-fit: cover;
+}
+
+.testimonial{
+  height: 550px;
+  background-image: url('../images/testimonial-bg.jpg');
+}
+
+.input__row {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 65px;
+  position: relative;
+  font-size: 16px;
+  width: 100%;
+}
+
+.input__row .label{
+  position: absolute;
+  top: 13px;
+  left: 2px;
+  transition: all linear 0.3s;
+}
+
+.input__row input, .input__row textarea, .input__row  button {
+  appearance: none;
+  background-color: transparent;
+  height: 40px;
+  min-height: 40px;
+  border-width: 0 0 1px 0;
+  border-color: #2f2f2f;
+  color: #2f2f2f;
+  font-size: 16px;
+  outline: none;
+  border-radius: 0;
+  width: inherit;
+  box-sizing: border-box;
+}
+
+.input__row textarea {
+  resize: vertical; 
+}
+
+.input__row  button {
+  transition: all linear 0.2s;
+  border-width: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input__row  button:hover {
+  background: #2f2f2f;
+  color: white;
+}
+
+.input__row input:focus ~ .label,
+.input__row input:valid ~ .label,
+.input__row textarea:focus ~ .label,
+.input__row textarea:valid ~ .valid{
+  top: -15px;
+}
+
+.footer{
+  padding: 20px 0;
+  background-color: #2f2f2f;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  font-size: 14px;
+}
