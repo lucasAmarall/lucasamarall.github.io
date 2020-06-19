@@ -34,7 +34,7 @@ function initIntroSwiper(){
   })
 }
 function init() {
-  // setPhotos();
+  setPhotos();
   initIntroSwiper()
 }
 
