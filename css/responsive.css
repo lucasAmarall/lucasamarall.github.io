@@ -8,6 +8,10 @@
     .container {
         padding: 0 24px!important; 
     }
+    .intro__slide {
+        padding-left: 0;
+    }
+
     .box {
         padding: 30px 25px 35px 25px
     }
@@ -32,6 +36,9 @@
     }
     .box-wrap {
       margin-left: 0;
+    }
+    .padding {
+        padding: 60px 0;
     }
     .text-block {
         margin-bottom: 16px;
