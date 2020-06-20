@@ -50,7 +50,7 @@
 }
 
 .hero__label {
-  font-family: 'Roboto Slab',serif;
+  font-family: 'Roboto Slab', serif;
   display: inline-block;
   letter-spacing: .6px;
   margin-bottom: 39px;
@@ -64,7 +64,8 @@
   width: 100%;
 }
 
-.intro__image, .intro__content {
+.intro__image,
+.intro__content {
   width: 50%;
   position: relative;
 }
@@ -83,12 +84,16 @@
 }
 
 .intro__slide {
-  padding-left: 120px;
   flex-direction: column;
   justify-content: center;
   max-width: 700px;
   height: 100%;
+  padding: 0 10%;
   margin: 0 auto;
+}
+
+.intro__slide .container {
+  height: unset;
 }
 
 .intro__table {
@@ -100,8 +105,9 @@
 .intro__navigator {
   text-align: center;
 }
-.testimonial{
-  height: 550px;
+
+.testimonial {
+  height: 650px;
   background-image: url(../images/small-testimonial-bg.jpg);
 }
 
@@ -114,14 +120,16 @@
   width: 100%;
 }
 
-.input__row .label{
+.input__row .label {
   position: absolute;
   top: 13px;
   left: 2px;
   transition: all linear 0.3s;
 }
 
-.input__row input, .input__row textarea, .input__row  button {
+.input__row input,
+.input__row textarea,
+.input__row button {
   appearance: none;
   background-color: transparent;
   height: 40px;
@@ -137,52 +145,35 @@
 }
 
 .input__row textarea {
-  resize: vertical; 
+  resize: vertical;
 }
 
-.input__row  button {
+.input__row button {
   transition: all linear 0.2s;
   border-width: 1px;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.input__row  button:hover {
+.input__row button:hover {
   background: #2f2f2f;
   color: white;
 }
 
-.input__row input:focus ~ .label,
-.input__row input:valid ~ .label,
-.input__row textarea:focus ~ .label,
-.input__row textarea:valid ~ .valid{
+.input__row input:focus~.label,
+.input__row input:valid~.label,
+.input__row textarea:focus~.label,
+.input__row textarea:valid~.valid {
   top: -15px;
 }
 
-.footer{
+.footer {
   padding: 20px 0;
   background-color: #2f2f2f;
   color: white;
   font-weight: 300;
   text-align: center;
   font-size: 14px;
-}
-
-.swiper-pagination-bullet {
-  width: 12px !important;
-  height: 12px!important;
-  margin-right: 20px !important;
-  cursor: pointer !important;
-  background: #2f2f2f !important;
-}
-
-.swiper-pagination-bullet:last-child{
-  margin-right: 0 !important;
-}
-.swiper-slide {
-  display: flex !important;
-  align-items: center !important;
-  height: 650px !important;
 }
 
 .intro__navigator {

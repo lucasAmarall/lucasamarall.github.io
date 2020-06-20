@@ -1,5 +1,6 @@
-body {
+body,html {
   color: #2f2f2f;
+  background-color: #2f2f2f;
   font-family: Roboto, sans-serif;
   background-color: white;
 }
@@ -83,7 +84,7 @@ hr {
   font-family: Roboto, sans-serif;
 }
 
-.text.-hidden{
+.text.-hidden {
   display: none;
 }
 
@@ -175,6 +176,7 @@ hr {
   margin-top: 5px;
   font-weight: 400;
 }
+
 .tag a:hover {
   border: 1px solid #ececec;
   color: #ccc;
@@ -191,7 +193,8 @@ tr {
   height: 35px;
 }
 
-td.title, td.title a {
+td.title,
+td.title a {
   padding-right: 10px;
   font-weight: 500;
 }
@@ -200,7 +203,27 @@ td.break {
   padding-right: 15px;
 }
 
-td, td a {
+td,
+td a {
   font-size: 13px;
   font-weight: 300;
+}
+
+.testimonial__text {
+  font-size: 16px;
+  line-height: 46px;
+  letter-spacing: 2px;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  text-align: center;
+}
+
+.testimonial__author {
+  font-size: 14px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  color: #b7b7b7;
+  font-weight: 700;
+  display: block;
+  text-align: center;
 }
