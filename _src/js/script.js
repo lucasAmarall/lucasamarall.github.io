@@ -25,19 +25,22 @@ function setPhotos() {
 }
 
 function initIntroSwiper(){
-  new Swiper ('.about-swiper', {
-    loop: false,
-    pagination: {
-      el: '.about-swiper-pagination',
-      clickable: true,
-    }
-  })
-  new Swiper ('.testimonial-container', {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-    },
-  })
+  setTimeout(function(){
+    if(!Swiper) initIntroSwiper()
+    new Swiper ('.about-swiper', {
+      loop: false,
+      pagination: {
+        el: '.about-swiper-pagination',
+        clickable: true,
+      }
+    })
+    new Swiper ('.testimonial-container', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+    })
+  }, 100)
 }
 function init() {
   setPhotos();
