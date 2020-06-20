@@ -1,496 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Lucas Amaral | Portfolio</title>
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Lucas Amaral | Portfolio" name="description">
-  <!--Fav-->
-  <link href="images/favicon.png" rel="shortcut icon">
+  <title>Lucas Amaral | Portfolio</title>
+  <meta name="title" content="Lucas Amaral | Portfolio">
+  <meta name="description" content="React, React native, Vue, Node, and Typescript developer.I'm a front-end developer">
 
-  <!--styles-->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/owl.carousel.css" rel="stylesheet">
-  <link href="css/owl.theme.css" rel="stylesheet">
-  <link href="css/magnific-popup.css" rel="stylesheet">
-  <link href="css/style.css?2" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <meta property="og:title" content="What is Open Graph?"/>
+  <meta property="og:description" content="React, React native, Vue, Node, and Typescript developer.I'm a front-end developer"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="image/lucas.jpg"/>
+  <meta property="og:url" content="https://lucasamarall.github.io/"/>
+  <meta property="og:site_name" content="Lucas Amaral | Portfolio">
+  <meta name="twitter:title" content="Lucas Amaral | Portfolio">
 
-  <!--fonts google-->
+  <meta name="twitter:description" content=" React, React native, Vue, Node, and Typescript developer.I'm a front-end developer">
+  <meta name="twitter:image" content="image/logo.jpg">
+  <meta name="twitter:card" content="image/lucas.jpg">
+  <meta name="twitter:image:alt" content="Lucas's photo">
+  
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-
-  <!--[if lt IE 9]>
-       <script type="text/javascript" src="js/html5shiv.min.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/box.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <!--PRELOADER-->
-  <!-- <div id="preloader"></div> -->
-  <!--/.PRELOADER END-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169612002-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  <!--HEADER -->
-  <div class="header">
-    <div class="for-sticky">
-      <!--LOGO-->
-      <div class="col-md-2 col-xs-6 logo">
-        <a href="/"><img alt="logo" class="logo-nav" src="images/logo.png"></a>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-169612002-1');
+  </script>
+  <header class="header grey-bg">
+    <div class="container">
+      <a href="/">
+        <h1 class="center-cover-bg header__title">
+          Lucas amaral
+        </h1>
+      </a>
+    </div>
+  </header>
+  <!--HERO-->
+  <section class="hero center-cover-bg grey-bg" id="home">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__box">
+          <h1>
+            <span class="hero__label">Hello</span><br>
+            <span class="text">I'm Lucas Amaral</span>
+            <span class="text -hidden">I'm a Web developer</span>
+            <span class="text -hidden">Lover of Simplicity</span>
+            <span class="text -hidden">I hope you enjoy this journey</span>
+          </h1>
+        </div>
+        <div class="mouse-icon">
+          <div class="scroll"></div>
+        </div>
       </div>
-      <!--/.LOGO END-->
     </div>
-    <div class="menu-wrap">
-      <nav class="menu">
-        <div class="menu-list">
-          <a data-scroll="" href="#home" class="active">
-            <span>Home</span>
-          </a>
-          <a data-scroll="" href="#about">
-            <span>About</span>
-          </a>
-          <a data-scroll="" href="#work">
-            <span>Work</span>
-          </a>
-          <a data-scroll="" href="#employement">
-            <span>Employement</span>
-          </a>
-          <a data-scroll="" href="#education">
-            <span>Education</span>
-          </a>
-          <a data-scroll="" href="#testimonial">
-            <span>Testimonial</span>
-          </a>
-          <a data-scroll="" href="#contact">
-            <span>Contact</span>
-          </a>
-        </div>
-      </nav>
-      <button class="close-button" id="close-button">Close Menu</button>
-    </div>
-    <button class="menu-button" id="open-button">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    <!--/.for-sticky-->
-  </div>
-  <!--/.HEADER END-->
-
-  <!--CONTENT WRAP-->
-  <div class="content-wrap">
-    <!--CONTENT-->
-    <div class="content">
-      <!--HOME-->
-      <section id="home">
-        <div class="container">
-          <div class="row">
-            <div class="wrap-hero-content">
-              <div class="hero-content">
-                <h1>Hello</h1>
-                <br>
-                <span class="typed"></span>
+  </section>
+  <!--HERO-->
+  <!--INTRO-->
+  <section class="intro white-bg flex" id="intro">
+    <img class="intro__image" src="images/small-lucas.jpg" alt="Lucas Amaral foto">
+    <div class="intro__content">
+      <div class="swiper-container about-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="intro__slide padding flex">
+              <div class="container">
+                <p class="light__label">
+                  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                  facilisis at vero eros. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+                  vel illum dolore eu feugiat nulla facilisis at vero eros.
+                </p>
+                <h5 class="ass__text">A. Lucas</h5>
               </div>
-            </div>
-            <div class="mouse-icon margin-20">
-              <div class="scroll"></div>
             </div>
           </div>
-        </div>
-      </section>
-      <!--/.HOME END-->
-
-      <!--ABOUT-->
-      <section id="about">
-        <div class="col-md-6 col-xs-12 no-pad">
-          <div class="bg-about"></div>
-        </div>
-        <div class="col-md-6 col-sm-12 col-xs-12 white-col">
-          <div class="row">
-            <!--OWL CAROUSEL2-->
-            <div class="owl-carousel2">
-              <div class="col-md-12">
-                <div class="wrap-about">
-                  <div class="w-content">
-                    <p class="head-about">
-                      DLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    </p>
-
-                    <h5 class="name">
-                      A. Lucas
-                    </h5>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-12 col-sm-12 col-xs-12 white-col">
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
-                    <div class="wrap-about">
-                      <table class="w-content">
-                        <tr>
-                          <td class="title">Name </td>
-                          <td class="break">:</td>
-                          <td>
-                            <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/devamaral/">
-                              Lucas Amaral
+          <div class="swiper-slide">
+            <div class="intro__slide padding flex">
+              <div>
+                <div class="container">
+                  <table class="intro__table">
+                    <tr>
+                      <td class="title">Name </td>
+                      <td class="break">:</td>
+                      <td>
+                        <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/devamaral/">
+                          Lucas Amaral
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="title">Email </td>
+                      <td class="break">:</td>
+                      <td>
+                        <a href="mailto:lucasamaral.dev@gmail.com">
+                            lucasamaral.dev@gmail.com
+                          </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="title">Address </td>
+                      <td class="break">:</td>
+                      <td>
+                        <a rel="noopener" target="_blank" href="https://www.google.com/maps/place/Pelotas+-+Princesa,+Pelotas+-+RS/@-31.6243019,-52.4723007,11z/data=!3m1!4b1!4m5!3m4!1s0x95104991ad796447:0x99bab4aec1bd644f!8m2!3d-31.7653989!4d-52.3375886">
+                          Pelotas RS, Brazil
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="title">Linkedin </td>
+                      <td class="break">:</td>
+                      <td>
+                        <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/devamaral/">
+                            https://www.linkedin.com/in/devamaral/
+                          </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="title">Codepen </td>
+                      <td class="break">:</td>
+                      <td>
+                        <a rel="noopener" target="_blank" href="https://codepen.io/LucasA">
+                              https://codepen.io/LucasA
                             </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="title">Email </td>
-                          <td class="break">:</td>
-                          <td>
-                            <a href="mailto:lucasamaral.dev@gmail.com">
-                                lucasamaral.dev@gmail.com
-                              </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="title">Address </td>
-                          <td class="break">:</td>
-                          <td> 
-                            <a rel="noopener" target="_blank" href="https://www.google.com/maps/place/Pelotas+-+Princesa,+Pelotas+-+RS/@-31.6243019,-52.4723007,11z/data=!3m1!4b1!4m5!3m4!1s0x95104991ad796447:0x99bab4aec1bd644f!8m2!3d-31.7653989!4d-52.3375886" >
-                              Pelotas RS, Brazil
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="title">Linkedin </td>
-                          <td class="break">:</td>
-                          <td>
-                            <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/devamaral/">
-                                https://www.linkedin.com/in/devamaral/
-                              </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="title">Codepen </td>
-                          <td class="break">:</td>
-                          <td>
-                            <a rel="noopener" target="_blank" href="https://codepen.io/LucasA">
-                                  https://codepen.io/LucasA
-                                </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="title">Github</td>
-                          <td class="break">:</td>
-                          <td>
-                            <a rel="noopener" target="_blank" href="https://github.com/lucasAmarall">
-                                https://github.com/lucasAmarall
-                              </a>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--/.OWL CAROUSEL2 END-->
-          </div>
-        </div>
-      </section>
-      <!--/.ABOUT END-->
-
-      <!--ABOUT 1-->
-      <section class="white-bg" id="about1">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="title-small">
-                <span>About me</span>
-              </h3>
-              <p class="content-detail">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--/.ABOU1 END-->
-
-      <!--WORK-->
-      <section class="grey-bg mar-tm-12" id="work">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="title-small">
-                <span>Work</span>
-              </h3>
-              <p class="content-detail">
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-                facilisis at vero eros. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                vel illum dolore eu feugiat nulla facilisis at vero eros. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Duis autem vel eum iriure dolor in hendrerit in vulputate
-                velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--/.WORK END-->
-
-
-      <!--EMPLOYEMENT-->
-      <section class="white-bg" id="employement">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <h3 class="title-small">
-                <span>Employement</span>
-              </h3>
-              <p class="content-detail">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-              </p>
-            </div>
-            <div class="col-md-9 content-right">
-              <div class="row">
-                <ul class="listing-item">
-                  <li>
-                    <div class="col-md-12 col-sm-12">
-                      <div class="wrap-card">
-                        <div class="card">
-                          <h2 class="year">
-                            2018 - current
-                          </h2>
-                          <p class="job">
-                            web developer
-                          </p>
-                          <p class="company">
-                            <a href="http://nodo.cc/" rel="noopener" target="_blank">
-                                Nodo
-                              </a>
-                          </p>
-                          <hr>
-                          <div class="text-detail">
-                            <p>
-                              Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo
-                              typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="title">Github</td>
+                      <td class="break">:</td>
+                      <td>
+                        <a rel="noopener" target="_blank" href="https://github.com/lucasAmarall">
+                            https://github.com/lucasAmarall
+                          </a>
+                      </td>
+                    </tr>
+                  </table>
+               </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!--/.EMPLOYEMENT END-->
-
-
-      <!--EDUCATION-->
-      <section class="grey-bg" id="education">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <h3 class="title-small">
-                <span>Education</span>
-              </h3>
-              <p class="content-detail">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-              </p>
-            </div>
-            <div class="col-md-9 content-right">
-              <div class="row">
-                <ul class="listing-item">
-                  <li>
-                    <div class="col-md-12 col-sm-6">
-                      <div class="wrap-card">
-                        <div class="card">
-                          <h2 class="year">
-                            2018 - 2019
-                          </h2>
-                          <p class="job">
-                            information security
-                          </p>
-                          <p class="company">
-                            Realiza digital
-                          </p>
-                          <hr>
-                          <div class="text-detail">
-                            <p>
-                              Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo
-                              typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="col-md-6 col-sm-6">
-                      <div class="wrap-card">
-                        <div class="card">
-                          <h2 class="year">
-                            2007 - 2016
-                          </h2>
-                          <p class="job">
-                            elementary School
-                          </p>
-                          <p class="company">
-                            Dona Mariana Eufrásia
-                          </p>
-                          <hr>
-                          <div class="text-detail">
-                            <p>
-                              Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo
-                              typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="col-md-6 col-sm-6">
-                      <div class="wrap-card">
-                        <div class="card">
-                          <h2 class="year">
-                            2016 - 2019
-                          </h2>
-                          <p class="job">
-                            High School
-                          </p>
-                          <p class="company">
-                            C.I.E.P
-                          </p>
-                          <hr>
-                          <div class="text-detail">
-                            <p>
-                              Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo
-                              typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div class="intro__navigator">
+          <div class="about-swiper-pagination"></div>
         </div>
-      </section>
-      <!--/.EDUCATION END-->
-
-      <!--TESTIMONIAL-->
-      <section id="testimonial">
-        <div class="container">
-          <div class="row wrap-testimonial">
-            <div class="col-md-10 col-md-offset-1">
-              <div class="owl-carousel">
-                <div class="list-testimonial">
-                  <div class="content-testimonial">
-                    <h3 class="testi">
-                      “ Reza did a phenominal job setting up my a website for my product He performed the task very quickly and efficiently. We know we have the superior topical pain relief cream on the market and he has helped us communicate that message via the website he
-                      built from scratch. Thanks! ”
-                    </h3>
-                    <p class="people">
-                      Darin Cohen - Active10
-                    </p>
-                  </div>
-                </div>
-                <div class="list-testimonial">
-                  <div class="content-testimonial">
-                    <h3 class="testi">
-                      “ Another successful project working with Reza. He has great design skills, is very responsive and professional. Looking forward to the next opportunity to work together. ”
-                    </h3>
-                    <p class="people">
-                      Marko Milicevic
-                    </p>
-                  </div>
-                </div>
-                <div class="list-testimonial">
-                  <div class="content-testimonial">
-                    <h3 class="testi">
-                      “ Great designer! I like his sense of design, especially the color scheme. Quick turnaround. Look forward to work with him again. Thanks!! ”
-                    </h3>
-                    <p class="people">
-                      JK Thang
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mask-testimonial"></div>
-      </section>
-      <!--/.TESTMONIAL END-->
-
-
-      <!--CONTACT-->
-      <section id="contact" class="white-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <h3 class="title-small">
-                <span>Contact</span>
-              </h3>
-              <p class="content-detail">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-              </p>
-
-            </div>
-            <div class="col-md-9 content-right">
-              <form>
-                <div class="group">
-                  <input required="" type="text"><span class="highlight"></span><span class="bar"></span><label>Name</label>
-                </div>
-                <div class="group">
-                  <input required="" type="email"><span class="highlight"></span><span class="bar"></span><label>Email</label>
-                </div>
-                <div class="group">
-                  <textarea required=""></textarea><span class="highlight"></span><span class="bar"></span><label>Message</label>
-                </div>
-                <input id="sendMessage" name="sendMessage" type="submit" value="Send Message">
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--/.CONTACT END-->
-
-      <!--FOOTER-->
-      <footer>
-        <div class="footer-bottom">
-          <div class="container">
-            <div class="row">
-              <p class="content-detail -white">
-                Copyright &copy; 2020 Lucas A. All rights reserved.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!--/.FOOTER-END-->
-
-      <!--/.CONTENT END-->
+      </div>
     </div>
-    <!--/.CONTENT-WRAP END-->
-  </div>
+  </section>
+  <!--INTRO-->
+  <!--ABOUT-->
+  <section class="about white-bg padding">
+    <div class="container">
+      <h2 class="small-title">About me</h2>
+      <p class="text-block">
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+        facilisis at vero eros. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+        illum dolore eu feugiat nulla facilisis at vero eros. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+        esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.
+      </p>
+    </div>
+  </section>
+  <!--ABOUT-->
+  <!--WORK-->
+  <section class="grey-bg padding">
+    <div class="container">
+      <h3 class="small-title">Work</h3>
+      <p class="text-block">
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+        facilisis at vero eros. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+        illum dolore eu feugiat nulla facilisis at vero eros. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+        esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.
+      </p>
+    </div>
+  </section>
+  <!--WORK-->
+  <!--EMPLOYEMENT-->
+  <section class="padding" id="employement">
+    <div class="container flex space-between">
+      <div class="w-20 margin-right-60px">
+        <h4 class="small-title">Employement</h4>
+        <p class="text-block">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+      </div>
+      <article class="w-100">
+        <div class="box-wrap w-100">
+          <article class="box -top">
+            <p>
+              <span class="medium__label block">2018 - current</span>
+              <span class="small__label block">WEB DEVELOPER</span>
+              <span class="tag">
+                <a href="https://nodo.cc/" target="_blank" rel="noopener noreferrer">
+                  Nodo
+                </a>
+              </span>
+            </p>
+            <hr />
+            <p class="light__label">
+              Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo
+              typi, qui nunc nobis videntur parum clari, fiant sollemnes.
+            </p>
+          </article>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!--EMPLOYEMENT-->
+  <!--EDUCATION-->
+  <section class="grey-bg padding" id="education">
+    <div class="container flex space-between">
+      <div class="w-20 margin-right-60px">
+        <h4 class="small-title">Education</h4>
+        <p class="text-block">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+      </div>
+      <div class="w-100">
+        <div class="box-wrap w-100">
+          <article class="box -top">
+            <p>
+              <span class="medium__label block">2018 - 2018</span>
+              <span class="small__label block">INFORMATION SECURITY</span>
+              <span class="light__label block">Realiza digital</span>
+            </p>
+            <hr />
+            <p class="light__label">
+              Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo
+              typi, qui nunc nobis videntur parum clari, fiant sollemnes.
+            </p>
+          </article>
+        </div>
+        <div class="flex w-100 space-between">
+          <div class="box-wrap w-50">
+            <article class="box">
+              <p>
+                <span class="medium__label block">2007 - 2016</span>
+                <span class="small__label block">ELEMENTARY SCHOOL</span>
+                <span class="light__label block">Dona Mariana Eufrásia</span>
+              </p>
+              <hr />
+              <p class="light__label">
+                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo
+                typi, qui nunc nobis videntur parum clari, fiant sollemnes.
+              </p>
+            </article>
+          </div>
+          <div class="box-wrap w-50 -right">
+            <article class="box">
+              <p>
+                <span class="medium__label block">2016 - 2019</span>
+                <span class="small__label block">HIGH SCHOOL</span>
+                <span class="light__label block">C.I.E.P</span>
+              </p>
+              <hr />
+              <p class="light__label">
+                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo
+                typi, qui nunc nobis videntur parum clari, fiant sollemnes.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--EDUCATION-->
+  <!--TESTIMONIAl-->
+  <section class="testimonial center-cover-bg" id="testimonial">
+    <div class="container">
+      <div class="swiper-container testimonial-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="flex">
+              <div class="container">
+                <p class="testimonial__text">
+                  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.
+                </p>
+                <h5 class="testimonial__author">Fulano</h5>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex">
+              <div class="container">
+                <p class="testimonial__text">
+                  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.
+                </p>
+                <h5 class="testimonial__author">Beltrano</h5>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex">
+              <div class="container">
+                <p class="testimonial__text">
+                  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.
+                </p>
+                <h5 class="testimonial__author">Fulano</h5>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex">
+              <div class="container">
+                <p class="testimonial__text">
+                  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.
+                </p>
+                <h5 class="testimonial__author">Ciclano</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--TESTIMONIAl-->
+  <!--CONTACT-->
+  <section class="contact padding center-cover-bg" id="contact">
+    <div class="container">
+      <div class="flex space-between">
+        <div class="w-20 margin-right-60px contact__form">
+          <h5 class="small-title">
+            Contact
+          </h5>
+          <p class="text-block">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          </p>
+        </div>
+        <div class="w-100">
+          <form action="javascript" method="post">
+            <label class="input__row">
+          <input type="text" required pattern=".*\S.*"/>
+          <span class="label">Name:</span>
+        </label>
+            <label class="input__row">
+          <input type="email" required pattern=".*\S.*"/>
+          <span class="label">Email:</span>
+        </label>
+            <label class="input__row">
+          <textarea type="Message" required pattern=".*\S.*"></textarea>
+          <span class="label">Message:</span>
+        </label>
+            <span class="input__row">
 
-
-  <script src="js/jquery-1.9.1.min.js" type="text/javascript" defer></script>
-  <script src="js/jquery.appear.js" type="text/javascript" defer></script>
-  <script src="js/bootstrap.min.js" type="text/javascript" defer></script>
-  <script src="js/classie.js" type="text/javascript" defer></script>
-  <script src="js/owl.carousel.min.js" type="text/javascript" defer></script>
-  <script src="js/jquery.magnific-popup.min.js" type="text/javascript" defer></script>
-  <script src="js/masonry.pkgd.min.js" type="text/javascript" defer></script>
-  <script src="js/masonry.js" type="text/javascript" defer></script>
-  <script src="js/smooth-scroll.min.js" type="text/javascript" defer></script>
-  <script src="js/typed.js" type="text/javascript" defer></script>
-  <script src="js/main.js" type="text/javascript" defer></script>
+          <button type="submit">SEND MESSAGE</button>
+        </span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--CONTACT-->
+  <!--FOOTER-->
+  <footer class="footer">
+    <span>Copyright &copy; 2020 Lucas A. All rights reserved.</span>
+  </footer>
+  <!--FOOTER-->
+  <script async src="js/script.js"></script>
+  <script src="js/swiper.min.js"></script>
 </body>
 
 </html>

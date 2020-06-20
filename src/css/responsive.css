@@ -1,103 +1,51 @@
-@media screen and (max-width: 480px){
-	/*----- layout ----*/
-	.grey-bg, .white-bg{
-		padding: 40px 0; 
-	}
-	/*---- hero -----*/
-	.hero-content{
-		min-width: 280px; 
-		padding: 25px;
-	}
-	.menu-wrap{width: 220px;}
-	.mouse-icon{bottom: 5px;}
-
-	/*---- portfolio -----*/
-	ul.portfolio-image li{
-		width: 100%;
-		padding-top: 95%;
-	}
-
-	/*---- blog -----*/
-	.grid-item {
-    width: 100% !important;
-    padding: 0;
-  }
-
-	/*---- quote -----*/
-	.wrap-about{ 
-		padding: 0 0 20px 0;
-		min-height: 400px !important;
-	}
-	.wrap-about .w-content{
-		left: 0;
-    right: 0;
-    width: 100%;
-    top: 0;
-    padding: 30px 0;
-    transform: none;
-	}
-
-
-  /*------- testimonial -------*/
-  #testimonial{ height: 700px;}
-
-  .skillst {margin-top: 50px;}
+@media(max-device-width: 600px){
+    .hero__box {
+        min-width: 280px;
+        padding: 25px;
+    }
 }
+@media(max-device-width: 600px){
+    .container {
+        padding: 0 24px!important; 
+    }
+    .intro__slide {
+        padding-left: 0;
+    }
 
-
-@media screen and (max-width: 768px){
-	/*------ header -----*/	
-	.for-sticky{ padding: 0; }
-	.logo-nav { margin-left: 0;}
-	.menu-button{margin-right: 15px;}
-	.ma-infinitypush-wrapper.ma-infinitypush-active-button.ma-infinitypush-button-right .ma-infinitypush-button{
-		left: -65px;
-	}
-	.ma-infinitypush-wrapper{ width: 200px; }
-	.ma-infinitypush-wrapper	ul > li{
-			width: 200px;
-		}
-
-	/*------- home ------*/
-	#home p {width: 100%;}
-
-	/*----- portfolio -----*/
-	.portfolio-image > li{
-		width: 50%;
-	}
-
-
-  /*---- blog -----*/
-	.grid-item {width: 50%;}
-
-  /*------- about -------*/
-  .bg-about{min-height: 520px;}
-  .wrap-about{
-  	min-height: 520px;
-  	padding-bottom: 10%;
-  	padding-left: 30px;
-    padding-right: 30px;
-  }
-  .wrap-about	.head-quote{padding-top: 10%;}
-
-  .content-right{ margin-top: 20px; }
-
-  .text-grey{margin-bottom: 45px;}
-  .skillst{ margin-top: 50px;}
-	/*------ footer -----*/
-  footer p{ text-align: center; }
-  footer ul.social {
-    margin-left: -40px;
-    text-align: center;
-	}
-	footer ul.social li { 
-		padding: 0px 10px 0px 10px;
-	}
-}
-
-@media screen and (min-width: 1024px){
-	.content-right {
-	  margin-top: 20px;
-	  padding: 0 20px 0 60px; 
-	}
+    .box {
+        padding: 30px 25px 35px 25px
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .hero__box {
+        min-width: 280px;
+        padding: 25px;
+    }
+    .intro__image, .intro__content {
+        width: 100%;
+    }
+    .margin-right-60px{
+        margin-right: 0;
+    }
+    .box-wrap {
+        margin-top: 10px;
+    }
+    .box-.top {
+        margin-top: 0;
+    }
+    .box-wrap {
+      margin-left: 0;
+    }
+    .padding {
+        padding: 60px 0;
+    }
+    .text-block {
+        margin-bottom: 16px;
+    }
+    [class*="w-"] {
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+    }
 }
