@@ -20,7 +20,7 @@ function setPhotos() {
   var introPhoto = document.querySelector('.intro__image');
 
   loadImage('/images/lucas.jpg').then(function(res) { introPhoto.setAttribute("src", res) })
-  loadImage('/images/hero.jpg').then(function(res) { hero.style.backgroundImage = "url(" + res + ")" })
+  // loadImage('/images/hero.jpg').then(function(res) { hero.style.backgroundImage = "url(" + res + ")" })
   loadImage('/images/testimonial-bg.jpg').then(function(res) { testimonial.style.backgroundImage = "url(" + res + ")" })
 }
 
@@ -42,9 +42,32 @@ function initIntroSwiper(){
     })
   }, 100)
 }
+
+function emailSent(){
+  console.log('SUCCESS!');
+}
+
+function emailFailed(){
+  console.log('!!SUCCESS!');
+}
+
+function sendEmail(){
+  const to_name = document.querySelector("#contact > div > div > div.w-100 > form > label:nth-child(1) input").value;
+  const to_email = document.querySelector("#contact > div > div > div.w-100 > form > label:nth-child(2) input").value;
+  const to_message = document.querySelector("#contact > div > div > div.w-100 > form > label:nth-child(3) textarea").value;
+  const templateParams = {to: 'lucasamaral.dev@gmail.com', to_name: to_name, to_email:to_email, to_message : to_message}
+  emailjs.send('default_service', 'template_hLjKCX34', templateParams).then(emailSent).catch(emailFailed)
+}
+
+function initEmailService(){
+  const form = document.querySelector('form')
+  form.addEventListener ('submit', sendEmail);
+}
 function init() {
   setPhotos();
   initIntroSwiper()
+  initEmailService()
 }
 
 window.addEventListener('load', init)
+

@@ -36,10 +36,12 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <script type="text/javascript" src=" https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169612002-1"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 
 <body>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169612002-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -49,6 +51,12 @@
     gtag('js', new Date());
     gtag('config', 'UA-169612002-1');
   </script>
+  <script type="text/javascript">
+    (function(){
+       emailjs.init("user_zdGdAtb3tnwXyuZkQsoro");
+    })();
+ </script>
+ 
   <header class="header grey-bg">
     <div class="container">
       <a href="/">
@@ -284,6 +292,23 @@
     </div>
   </section>
   <!--EDUCATION-->
+  <!--knowledge-->
+  <section class="padding" id="knowledge">
+    <div class="container flex space-between knowledge">
+      <div class="w-20 margin-right-60px">
+        <h4 class="small-title">knowledge</h4>
+        <p class="text-block">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+      </div>
+      <div class="w-100">
+        <!-- <div class="graph__container"> -->
+          <div id="graph" class="grey-bg" style="height:400px"></div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </section>
+  <!--knowledge-->
   <!--TESTIMONIAl-->
   <section class="testimonial center-cover-bg" id="testimonial">
     <div class="container">
@@ -347,24 +372,31 @@
           </p>
         </div>
         <div class="w-100">
-          <form action="javascript" method="post">
+          <form action="javascript:;" method="post">
             <label class="input__row">
-          <input type="text" required pattern=".*\S.*"/>
+          <input type="text" />
           <span class="label">Name:</span>
         </label>
             <label class="input__row">
-          <input type="email" required pattern=".*\S.*"/>
+          <input type="email" />
           <span class="label">Email:</span>
         </label>
             <label class="input__row">
-          <textarea type="Message" required pattern=".*\S.*"></textarea>
+          <textarea type="Message" ></textarea>
           <span class="label">Message:</span>
         </label>
             <span class="input__row">
-
-          <button type="submit">SEND MESSAGE</button>
-        </span>
+              <button type="submit">SEND MESSAGE</button>
+            </span>
           </form>
+          <div class="success">
+            <div class="container">
+
+            <p class="text-block">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -376,6 +408,7 @@
   </footer>
   <!--FOOTER-->
   <script async src="js/script.js"></script>
+  <script async src="js/tree.js"></script>
   <script src="js/swiper.min.js"></script>
 </body>
 
